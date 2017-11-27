@@ -1,0 +1,16 @@
+security:
+  user:
+    password: root
+    name: root
+
+server:
+  port: 9800
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
