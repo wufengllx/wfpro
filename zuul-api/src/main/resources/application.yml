@@ -1,0 +1,12 @@
+username: root
+password: root
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${username}:${password}@localhost:9800/eureka/
+server:
+  port: 9981
+spring:
+  application:
+    name: zuul-api
